@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+
+  <!--Used to test. Used to refresh the page every 5 seconds-->
+  <meta http-equiv="refresh" content="5" >
+
+
+  <title>Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #5e4485;
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+  }
+  .navbar-brand{
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 5px;
+  }
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    color: #fff;
+    background-color: #5e4485;
+  }
+  .navbar-inverse .navbar-nav li a {
+    color: #d5d5d5;
+  }
+
+
+
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+  }
+  .btn{
+    font-size: 18px;
+    color: #fff;
+    padding: 12px 22px;
+    background: #5e4485;
+    border: 2px solid #fff;
+  }
+
+  .container{
+    margin: 4% auto;
+  }
+
+  #icon {
+    max-width: 200px;
+    margin: 1% auto;
+  }
+
+  footer{
+    width: 100%;
+    background-color: #5e4485;
+    padding: 3%;
+    color: #fff;
+  }
+
+  .fa{
+    padding: 15px;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .fa:hover{
+    color: #dfdfdf;
+    text-decoration: none;
+  }
+
+  @media (max-width: 900px) {
+    .fa{
+      font-size: 20px;
+      padding: 10%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .carousel-caption{
+      display: none;
+    }
+    #icon {
+      max-width: 150px;
+    }
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+
+  </style>
+
+
+</head>
+
+<body>
+
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../img/w3newbie.png"></a>
+      </div>
+
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="homepage.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Me</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+          <li>
+            <a href="resume.html">Resume</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+    </div>
+  </nav>
+  <!--End of Navigation Bar -->
+
+  <!-- Start of Title-->
+
+  <div class="container">
+    <h1 class="text-center">Courses Taken</h1>
+    <br>
+    <h4>I am currently taking a bachelors of science with a major in software engineering. At the University of Calgary, the semesters run as follows:</h4>
+    <hr>
+    <ul>
+      <li>FALL: Sept - Dec (4 months)</li>
+      <li>WINTER: Jan - Apr (4 months)</li>
+			<li>SPRING: May - June (2 months)</li>
+			<li>SUMMER: July - Aug (2 months)</li>
+    </ul>
+  </div>
+
+  <!-- End of Title-->
+
+  <!-- Start of Table-->
+  <div class="container">
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="4">Year 1 (2015 - 2016)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>FALL 2015</th>
+            <th>WINTER 2016</th>
+            <th>SPRING 2016</th>
+            <th>SUMMER 2016</th>
+          </tr>
+          <tr>
+            <td title="Engineering Design and Communication">ENGG 200</td>
+            <td title="Behaviour of Liquids, Gases and Solids">ENGG 201</td>
+            <td title="Jews, Christians and Muslims">RELS 201</td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Computing for Engineers">ENGG 233</td>
+            <td title="Engineering Statics">ENGG 202</td>
+            <td title="Technology and Society">ENGG 481</td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Linear Methods I">MATH 211</td>
+            <td title="Fundamentals of Electrical Circuits and Machines">ENGG 225</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Calculus for Engineers and Scientists">MATH 275</td>
+            <td title="Multivariable Calculus for Engineers and Scientists">MATH 277</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="General Chemistry for Engineers">CHEM 209</td>
+            <td title="Electricity and Magnetism (for students in Engineering)">PHYS 259</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="4" class="tabletitle">Year 2 (2016 - 2017)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>FALL 2016</th>
+            <th>WINTER 2017</th>
+            <th>SPRING 2017</th>
+            <th>SUMMER 2017</th>
+          </tr>
+          <tr>
+            <td title="Digital Circuits">ENEL 353</td>
+            <td title="Signals and Transforms">ENEL 327</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Programming Fundamentals">ENCM 339</td>
+            <td title="	Computer Organization">ENCM 369</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Differential Equations for Engineers and Scientists">MATH 375</td>
+            <td title="Data Structures, Algorithms, and Their Applications">CPSC 319</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Acoustics, Optics and Modern Physics (for students in Engineering)">PHYS 365</td>
+            <td title="Principles of Software Development">ENSF 409</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Probability and Statistics for Engineers">ENGG 319</td>
+            <td title="Discrete Mathematics">MATH 271</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <table class="table">
+        <thead>
+          <tr>
+            <th colspan="4" class="tabletitle">Year 3 (2017 - 2018)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>FALL 2017</th>
+            <th>WINTER 2018</th>
+            <th>SPRING 2018</th>
+            <th>SUMMER 2018</th>
+          </tr>
+          <tr>
+            <td title="Principles of Software Design">ENSF 480</td>
+            <td title="Software Architecture">SENG 401</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Embedded System Interfacing">ENCM 511</td>
+            <td title="Software Testing, Reliability, and Quality">SENG 438</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Principles of Operating Systems">CPSC 457</td>
+            <td title="Software Requirements Engineering">SENG 471</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Database Management Systems">CPSC 471</td>
+            <td title="Computer Networks">CPSC 441</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+          <tr>
+            <td title="Professional and Technical Communication">COMS 3633</td>
+            <td title="Engineering Economics">ECON 209</td>
+            <td title=""></td>
+            <td title=""></td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+
+    </div>
+
+  </div>
+  <!-- End of Table-->
+
+
+  <!--Start of Footer-->
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Contact Us</h3>
+        <br>
+        <h4>Our address and contact info</h4>
+      </div>
+      <div class="col-sm-4">
+        <h3>Connect</h3>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-linkedin"></a>
+        <a href="#" class="fa fa-youtube"></a>
+      </div>
+      <div class="col-sm-4">
+        <img src="../img/bunny.png">
+      </div>
+    </div>
+  </footer>
+
+  <!--End of Footer-->
+
+
+
+
+</body>
+</html>
