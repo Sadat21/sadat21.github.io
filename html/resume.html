@@ -1,178 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-  <head>
+<head>
 
-    <!--Used to test. Used to refresh the page every 5 seconds-->
-    <meta http-equiv="refresh" content="5" >
-
-
-    <title>Bootstrap Website Tutorial</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-      .navbar{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: #5e4485;
-        color: #fff;
-        padding: 1% 0;
-        font-size: 1.2em;
-        border: 0;
-      }
-      .navbar-brand{
-        float: left;
-        min-height: 55px;
-        padding: 0 15px 5px;
-      }
-      .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-        color: #fff;
-        background-color: #5e4485;
-      }
-      .navbar-inverse .navbar-nav li a {
-        color: #d5d5d5;
-      }
+  <!--Used to test. Used to refresh the page every 5 seconds-->
+  <meta http-equiv="refresh" content="5" >
 
 
-
-      .carousel-caption{
-        top: 50%;
-        transform: translateY(-50%);
-        text-transform: uppercase;
-      }
-      .btn{
-        font-size: 18px;
-        color: #fff;
-        padding: 12px 22px;
-        background: #5e4485;
-        border: 2px solid #fff;
-      }
-
-      .container{
-        margin: 4% auto;
-      }
-
-      #icon {
-        max-width: 200px;
-        margin: 1% auto;
-      }
-
-      footer{
-        width: 100%;
-        background-color: #5e4485;
-        padding: 3%;
-        color: #fff;
-      }
-
-      .fa{
-        padding: 15px;
-        font-size: 25px;
-        color: #fff;
-      }
-
-      .fa:hover{
-        color: #dfdfdf;
-        text-decoration: none;
-      }
-
-      @media (max-width: 900px) {
-        .fa{
-          font-size: 20px;
-          padding: 10%;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .carousel-caption{
-          display: none;
-        }
-        #icon {
-          max-width: 150px;
-        }
-        h2 {
-          font-size: 1.7em;
-        }
-      }
-
-    </style>
+  <title>Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar{
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #5e4485;
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1.2em;
+    border: 0;
+  }
+  .navbar-brand{
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 5px;
+  }
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+    color: #fff;
+    background-color: #5e4485;
+  }
+  .navbar-inverse .navbar-nav li a {
+    color: #d5d5d5;
+  }
 
 
-  </head>
 
-  <body>
+  .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+  }
+  .btn{
+    font-size: 18px;
+    color: #fff;
+    padding: 12px 22px;
+    background: #5e4485;
+    border: 2px solid #fff;
+  }
 
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
+  .container{
+    margin: 4% auto;
+  }
 
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="../img/w3newbie.png"></a>
-        </div>
+  #icon {
+    max-width: 200px;
+    margin: 1% auto;
+  }
+
+  footer{
+    width: 100%;
+    background-color: #5e4485;
+    padding: 3%;
+    color: #fff;
+  }
+
+  .fa{
+    padding: 15px;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  .fa:hover{
+    color: #dfdfdf;
+    text-decoration: none;
+  }
+
+  @media (max-width: 900px) {
+    .fa{
+      font-size: 20px;
+      padding: 10%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .carousel-caption{
+      display: none;
+    }
+    #icon {
+      max-width: 150px;
+    }
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+
+  </style>
 
 
-        <div class="collapse navbar-collapse" id="myNavbar">
-         <ul class="nav navbar-nav navbar-right">
-           <li class="active">
-             <a href="homepage.html">Home</a>
-           </li>
-           <li>
-             <a href="about.html">About Me</a>
-           </li>
-           <li>
-             <a href="projects.html">Projects</a>
-           </li>
-           <li>
-             <a href="courses.html">Courses</a>
-           </li>
-           <li>
-             <a href="resume.html">Resume</a>
-           </li>
+</head>
 
-         </ul>
-        </div>
+<body>
 
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
 
-     </div>
-    </nav>
-    <!--End of Navigation Bar -->
-
-    <h1>Resume</h1>
-
-    <!--Start of Footer-->
-    <footer class="container-fluid text-center">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Contact Us</h3>
-          <br>
-          <h4>Our address and contact info</h4>
-        </div>
-        <div class="col-sm-4">
-          <h3>Connect</h3>
-          <a href="#" class="fa fa-facebook"></a>
-          <a href="#" class="fa fa-twitter"></a>
-          <a href="#" class="fa fa-google"></a>
-          <a href="#" class="fa fa-linkedin"></a>
-          <a href="#" class="fa fa-youtube"></a>
-        </div>
-        <div class="col-sm-4">
-          <img src="../img/bunny.png">
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../img/w3newbie.png"></a>
       </div>
-    </footer>
-
-    <!--End of Footer-->
 
 
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="homepage.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Me</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+          <li class="active">
+            <a href="resume.html">Resume</a>
+          </li>
+
+        </ul>
+      </div>
 
 
-  </body>
+    </div>
+  </nav>
+  <!--End of Navigation Bar -->
+
+  <!-- Start of Title -->
+  <div class="container">
+    <h1 class="text-center">Résumé</h1>
+    <p class="text-center"><a href="../Resume.pdf" target="_blank">Download Résumé</a> (Last Updated October 2017)</p>
+    <hr>
+  </div>
+
+
+  <!-- End of Title -->
+
+  <!--Start of Footer-->
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Contact Me</h3>
+        <br>
+        <h4>sadat.islam@ucalgary.ca</h4>
+      </div>
+      <div class="col-sm-4">
+        <h3>Connect</h3>
+        <a href="https://www.linkedin.com/in/sadat-islam/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/sadat21" class="fa fa-github" target="_blank"></a>
+      </div>
+      <div class="col-sm-4">
+        <img src="../img/bunny.png">
+      </div>
+    </div>
+  </footer>
+  <!--End of Footer-->
+
+
+
+
+</body>
 </html>
