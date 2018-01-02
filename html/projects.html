@@ -1,174 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-  <head>
+<head>
 
-    <!--Used to test. Used to refresh the page every 5 seconds-->
-    <meta http-equiv="refresh" content="5" >
+  <!--Used to test. Used to refresh the page every 5 seconds-->
+  <meta http-equiv="refresh" content="5" >
 
 
-    <title>Bootstrap Website Tutorial</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-      .navbar{
-        margin-bottom: 0;
-        border-radius: 0;
-        background-color: #5e4485;
-        color: #fff;
-        padding: 1% 0;
-        font-size: 1.2em;
-        border: 0;
-      }
-      .navbar-brand{
-        float: left;
-        min-height: 55px;
-        padding: 0 15px 5px;
-      }
-      .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
-        color: #fff;
-        background-color: #5e4485;
-      }
-      .navbar-inverse .navbar-nav li a {
-        color: #d5d5d5;
-      }
+  <title>Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
 
 
 
-      .carousel-caption{
-        top: 50%;
-        transform: translateY(-50%);
-        text-transform: uppercase;
-      }
-      .btn{
-        font-size: 18px;
-        color: #fff;
-        padding: 12px 22px;
-        background: #5e4485;
-        border: 2px solid #fff;
-      }
+  <!--Navigation Bar-->
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
 
-      .container{
-        margin: 4% auto;
-      }
-
-      #icon {
-        max-width: 200px;
-        margin: 1% auto;
-      }
-
-      footer{
-        width: 100%;
-        background-color: #5e4485;
-        padding: 3%;
-        color: #fff;
-      }
-
-      .fa{
-        padding: 15px;
-        font-size: 25px;
-        color: #fff;
-      }
-
-      .fa:hover{
-        color: #dfdfdf;
-        text-decoration: none;
-      }
-
-      @media (max-width: 900px) {
-        .fa{
-          font-size: 20px;
-          padding: 10%;
-        }
-      }
-
-      @media (max-width: 600px) {
-        .carousel-caption{
-          display: none;
-        }
-        #icon {
-          max-width: 150px;
-        }
-        h2 {
-          font-size: 1.7em;
-        }
-      }
-
-    </style>
-
-
-  </head>
-
-  <body>
-
-    <!--Navigation Bar-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="../img/w3newbie.png"></a>
-        </div>
-
-
-        <div class="collapse navbar-collapse" id="myNavbar">
-         <ul class="nav navbar-nav navbar-right">
-           <li class="active">
-             <a href="homepage.html">Home</a>
-           </li>
-           <li>
-             <a href="about.html">About Me</a>
-           </li>
-           <li>
-             <a href="projects.html">Projects</a>
-           </li>
-           <li>
-             <a href="courses.html">Courses</a>
-           </li>
-           <li>
-             <a href="resume.html">Resume</a>
-           </li>
-
-         </ul>
-        </div>
-
-
-     </div>
-    </nav>
-    <!--End of Navigation Bar -->
-
-    <h1>Projects</h1>
-
-    <!--Start of Footer-->
-    <footer class="container-fluid text-center">
-      <div class="row">
-        <div class="col-sm-4">
-          <h3>Contact Me</h3>
-          <br>
-          <h4>sadat.islam@ucalgary.ca</h4>
-        </div>
-        <div class="col-sm-4">
-          <h3>Connect</h3>
-          <a href="https://www.linkedin.com/in/sadat-islam/" class="fa fa-linkedin" target="_blank"></a>
-          <a href="https://github.com/sadat21" class="fa fa-github" target="_blank"></a>
-        </div>
-        <div class="col-sm-4">
-          <img src="../img/bunny.png">
-        </div>
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="../img/w3newbie.png"></a>
       </div>
-    </footer>
-    <!--End of Footer-->
+
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="homepage.html">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About Me</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="courses.html">Courses</a>
+          </li>
+          <li>
+            <a href="resume.html">Resume</a>
+          </li>
+
+        </ul>
+      </div>
+
+
+    </div>
+  </nav>
+  <!--End of Navigation Bar -->
+
+
+  <!-- Start of Title -->
+  <div class="container">
+    <h1 class="text-center">Projects</h1>
+    <br>
+    <p>
+      The following are projects that I have been involved in.
+      The list is ordered with the most recent project at the top.
+      Most of the projects have been a part of school but this website is a personal endeavor.
+      A link to my GitHub is in the footer.
+    </p>
+
+  </div>
+  <!-- End of Title -->
+
+  <!-- Start of all projects -->
+  <div class="container" data-spy="scroll" data-target=".navbar" data-offset="50" >
+    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+    <nav class="navbar navbar-inverse ">
+
+      <ul class="nav navbar-nav">
+        <li><a href="#section1">Personal Website</a></li>
+        <li><a href="#section2">Bangla Bazaar Food Court Website</a></li>
+        <li><a href="#section3">Airlines Registration System</a></li>
+        <li><a href="#section4">Calculator App for Android</a></li>
+        <li><a href="#section5">Kobra Wars</a></li>
+
+      </ul>
+
+    </nav>
+
+    <!-- Sections  -->
+    <div id="section1"style="background:lightblue;">
+      <hr>
+      <h2 class="text-center">Personal Website (January 2018)</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="section2" style="background:pink;">
+      <hr>
+      <h2 class="text-center">Bangla Bazaar Food Court Website (November 2017)</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="section3">
+      <hr>
+      <h2 class="text-center">Airlines Registration System (April 2017)</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="section4">
+      <hr>
+      <h2 class="text-center">Calculator App for Android (March 2017)</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div id="section5">
+      <hr>
+      <h2 class="text-center">Kobra Wars (December 2015)</h2>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+  </div>
+  <!-- End of all projects -->
 
 
 
 
-  </body>
+  <!--Start of Footer-->
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Contact Me</h3>
+        <br>
+        <h4>sadat.islam@ucalgary.ca</h4>
+      </div>
+      <div class="col-sm-4">
+        <h3>Connect</h3>
+        <a href="https://www.linkedin.com/in/sadat-islam/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/sadat21" class="fa fa-github" target="_blank"></a>
+      </div>
+      <div class="col-sm-4">
+        <img src="../img/bunny.png">
+      </div>
+    </div>
+  </footer>
+  <!--End of Footer-->
+
+
+
+
+</body>
 </html>
