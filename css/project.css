@@ -1,0 +1,8 @@
+.dropdown-menu{
+  background-color: #5e4485;
+  font-size: 18px;
+}
+
+.dropdown-menu li a:hover{
+  background-color: black;
+}
