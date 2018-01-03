@@ -1,12 +1,18 @@
 body{
   font-size: 18px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
+
+
 
 hr{
   color: black;
   background-color: black;
   height: 5px;
+}
+
+.img-circle{
+  border-radius: 50%;
 }
 
 .navbar{
