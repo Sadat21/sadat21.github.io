@@ -21,12 +21,10 @@
   background-color: #5e4485;
 }
 
-.sec-navbar .navbar-brand, .sec-navbar li{
-  color: #fff;
+.sec-navbar .navbar-brand h2{
+  color: #e9eff5;
 }
 
-.affix {
-      top: 0;
-      width: 100%;
-      z-index: 9999;
+.sec-navbar .navbar-brand h2:hover{
+  color: #fff;
 }
