@@ -1,0 +1,18 @@
+	Computer Engineering 501      	Principles of Computer Architecture
+	Computer Engineering 517      	Computer Arithmetic and Computational Complexity
+	Computer Science 453      	Introduction to Computer Graphics
+1	Computer Science 481      	Human-Computer Interaction I
+	Computer Science 525      	Principles of Computer Security
+	Computer Science 526      	Network Systems Security
+	Computer Science 559      	Introduction to Distributed Systems
+1	Computer Science 581      	Human-Computer Interaction II			REQUEST
+	Computer Science 583      	Introduction to Information Visualization
+1	Computer Science 585      	Games Programming				REQUEST
+	Software Engineering 499      	Introductory Topics in Software Engineering
+	Software Engineering 501      	Advanced Topics in Software Engineering
+1	Software Engineering 513      	Web-Based Systems
+1	Software Engineering 515      	Agile Software Engineering
+	Software Engineering 541      	Fundamentals of Software Evolution and Reuse
+	Software Engineering for Engineers 519      	Special Topics in Software Engineering
+1	Software Engineering for Engineers 545      	Introduction to Virtual Reality
+

@@ -41,6 +41,9 @@
 
 /* End of Video */
 
+section {
+  padding-top: 50px;
+}
 
 .white-bg{
 
@@ -57,4 +60,14 @@
 
 .black-bg a:hover{
   color: grey;
+}
+
+.btn-year{
+  width: 100%;
+  background: black;
+}
+
+button:hover {
+    background-color: #5e4485;
+    color: white;
 }

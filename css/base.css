@@ -82,6 +82,11 @@ footer{
       z-index: 9999;
 }
 
+th {
+  text-align: center;
+}
+
+
 @media (max-width: 900px) {
   .fa{
     font-size: 20px;

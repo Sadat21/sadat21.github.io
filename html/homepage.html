@@ -4,10 +4,10 @@
 <head>
 
   <!--Used to test. Used to refresh the page every 5 seconds-->
-  <!--<meta http-equiv="refresh" content="5" > -->
+  <!-- <meta http-equiv="refresh" content="5" > -->
 
 
-  <title>Bootstrap Website Tutorial</title>
+  <title>Sadat Islam</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -25,10 +25,13 @@
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="500">
+
+  <div id="topBar"></div> <!-- Used to navigate back to the top -->
+
 
   <!--Navigation Bar-->
-  <nav class="navbar navbar-inverse">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
 
       <div class="navbar-header">
@@ -37,27 +40,31 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand"><h1 >Sadat Islam</h1></a>
+        <a class="navbar-brand slide-section" href="#topBar"><h1 >Sadat Islam</h1></a>
       </div>
 
 
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active">
-            <a href="homepage.html">Home</a>
+          <li>
+            <a class="slide-section" href="#about">About Me</a>
           </li>
           <li>
-            <a href="about.html">About Me</a>
+            <a class="slide-section" href="#resume">Resume</a>
           </li>
           <li>
-            <a href="projects.html">Projects</a>
+            <a class="slide-section" href="#projects">Projects</a>
           </li>
           <li>
-            <a href="courses.html">Courses</a>
+            <a class="slide-section" href="#courses">Courses</a>
           </li>
           <li>
-            <a href="resume.html">Resume</a>
+            <a class="slide-section" href="#gallery">Gallery</a>
           </li>
+          <li>
+            <a href="about.html">To Do List</a>
+          </li>
+
 
         </ul>
       </div>
@@ -86,11 +93,11 @@
 
   <!-- Start of About me Section -->
   <div class="container-fluid white-bg">
-    <section class="container">
+    <section id="about" class="container">
 
       <div class="row">
         <div class="col-md-6">
-          <h1 id="about">Who am I?</h1>
+          <h1>Who am I?</h1>
           <br>
           <h3>I'm a goofy goober...</h3>
           <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
@@ -109,7 +116,7 @@
 
   <!-- Start of Resume Section -->
   <div class="container-fluid black-bg">
-    <section id="resume" class="container">
+    <section id="resume"  class="container">
       <h1 class="text-center">Résumé</h1>
       <hr>
 
@@ -167,10 +174,6 @@
           </div>
         </div>
       </div>
-
-
-
-
       <br>
       <p class="text-center"><a  class="btn" href="../Resume.pdf" target="_blank">Download Full Résumé</a> <br><br>(Last Updated October 2017)</p>
 
@@ -180,7 +183,7 @@
 
   <!-- Start of Projects Section -->
   <div class="container-fluid white-bg">
-    <section class="container">
+    <section id="projects" class="container">
       <h1 class="text-center">Top 3 Projects</h1>
       <br>
       <div class="row text-center">
@@ -197,10 +200,254 @@
           <h4>Airlines Registration System</h4>
         </div>
       </div>
+      <br>
+      <div class="row text-center">
+        <col class="col-sm-12">
+        <a class="btn" href="projects.html">View All Projects</a>
+      </div>
     </section>
   </div>
   <!-- End of Projects Section -->
 
+  <!-- Start of COursese Section -->
+  <div class="container-fluid black-bg">
+    <section id="courses" class="container">
+      <h1 class="text-center">Courses</h1>
+      <br>
+      <h4>I am currently taking a bachelors of science with a major in software engineering. At the University of Calgary, the semesters run as follows:</h4>
+      <br>
+      <ul>
+        <li>FALL: Sept - Dec (4 months)</li>
+        <li>WINTER: Jan - Apr (4 months)</li>
+  			<li>SPRING: May - June (2 months)</li>
+  			<li>SUMMER: July - Aug (2 months)</li>
+      </ul>
+
+      <div class="table-responsive text-center">
+        <button class="btn-year" data-toggle="collapse" data-target="#year1"><h2>Year 1 (2015 - 2016)</h2></button>
+        <table class="table">
+          <tbody id="year1" class="collapse">
+            <tr>
+              <th>FALL 2015</th>
+              <th>WINTER 2016</th>
+              <th>SPRING 2016</th>
+              <th>SUMMER 2016</th>
+            </tr>
+            <tr>
+              <td title="Engineering Design and Communication">ENGG 200</td>
+              <td title="Behaviour of Liquids, Gases and Solids">ENGG 201</td>
+              <td title="Jews, Christians and Muslims">RELS 201</td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Computing for Engineers">ENGG 233</td>
+              <td title="Engineering Statics">ENGG 202</td>
+              <td title="Technology and Society">ENGG 481</td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Linear Methods I">MATH 211</td>
+              <td title="Fundamentals of Electrical Circuits and Machines">ENGG 225</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Calculus for Engineers and Scientists">MATH 275</td>
+              <td title="Multivariable Calculus for Engineers and Scientists">MATH 277</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="General Chemistry for Engineers">CHEM 209</td>
+              <td title="Electricity and Magnetism (for students in Engineering)">PHYS 259</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <button class="btn-year" data-toggle="collapse" data-target="#year2"><h2>Year 2 (2016 - 2017)</h2></button>
+          <tbody id="year2" class="collapse">
+            <tr>
+              <th>FALL 2016</th>
+              <th>WINTER 2017</th>
+              <th>SPRING 2017</th>
+              <th>SUMMER 2017</th>
+            </tr>
+            <tr>
+              <td title="Digital Circuits">ENEL 353</td>
+              <td title="Signals and Transforms">ENEL 327</td>
+              <td title="" colspan="2">Summer Reserach</td>
+            </tr>
+            <tr>
+              <td title="Programming Fundamentals">ENCM 339</td>
+              <td title="	Computer Organization">ENCM 369</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Differential Equations for Engineers and Scientists">MATH 375</td>
+              <td title="Data Structures, Algorithms, and Their Applications">CPSC 319</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Acoustics, Optics and Modern Physics (for students in Engineering)">PHYS 365</td>
+              <td title="Principles of Software Development">ENSF 409</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Probability and Statistics for Engineers">ENGG 319</td>
+              <td title="Discrete Mathematics">MATH 271</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <button class="btn-year" data-toggle="collapse" data-target="#year3"><h2>Year 3 (2017 - 2018)</h2></button>
+          <tbody id="year3" class="collapse">
+            <tr>
+              <th>FALL 2017</th>
+              <th>WINTER 2018</th>
+              <th>SPRING 2018</th>
+              <th>SUMMER 2018</th>
+            </tr>
+            <tr>
+              <td title="Principles of Software Design">ENSF 480</td>
+              <td title="Software Architecture">SENG 401</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Embedded System Interfacing">ENCM 511</td>
+              <td title="Software Testing, Reliability, and Quality">SENG 438</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Principles of Operating Systems">CPSC 457</td>
+              <td title="Software Requirements Engineering">SENG 471</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Database Management Systems">CPSC 471</td>
+              <td title="Computer Networks">CPSC 441</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Professional and Technical Communication">COMS 363</td>
+              <td title="Engineering Economics">ECON 209</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table  class="table">
+          <button class="btn-year" data-toggle="collapse" data-target="#year4"><h2>Year 4 (2018 - 2019)</h2></button>
+          <tbody id="year4" class="collapse">
+            <tr>
+              <th>FALL 2017</th>
+              <th>WINTER 2018</th>
+              <th>SPRING 2018</th>
+              <th>SUMMER 2018</th>
+            </tr>
+            <tr>
+              <td title="The Role and Responsibilities of the Professional Engineer in Society">ENGG 513</td>
+              <td title="Option">OPTN </td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="table">
+          <button class="btn-year" data-toggle="collapse" data-target="#year5"><h2>Year 5 (2019 - 2020)</h2></button>
+          <tbody id="year5" class="collapse">
+            <tr>
+              <th>FALL 2017</th>
+              <th>WINTER 2018</th>
+              <th>SPRING 2018</th>
+              <th>SUMMER 2018</th>
+            </tr>
+            <tr>
+              <td title="Software Process and Project Management">SENG 511</td>
+              <td title="Software Performance Evaluation">SENG 533</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title="Computer, Electrical, and Software Engineering Team Design" colspan="2" class="text-center">ENGG 500</td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+            <tr>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+              <td title=""></td>
+            </tr>
+          </tbody>
+        </table>
+
+
+
+
+      </div>
+    </section>
+  </div>
+  <!-- Start of COursese Section -->
+
+  <!-- Start of Gallery Section -->
+  <div class="container-fluid white-bg">
+    <section id="gallery" class="container">
+      <h1 class="text-center">Gallery</h1>
+      <br>
+    </section>
+  </div>
+  <!-- Start of Gallery Section -->
 
 
 
