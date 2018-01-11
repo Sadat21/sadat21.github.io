@@ -86,7 +86,7 @@ hr{
 
 footer{
   width: 100%;
-  background-color: #404040;
+  background: linear-gradient(#5e4485,#00004d);
   padding: 3%;
   color: #fff;
 }
