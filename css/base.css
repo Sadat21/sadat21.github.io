@@ -1,7 +1,11 @@
 body{
-  background: #f2f2f2;
+  background: #f5f5dc;
   font-size: 18px;
   font-family: 'Quicksand', sans-serif;
+}
+
+a:visited{
+
 }
 
 
@@ -14,6 +18,10 @@ hr{
 
 .img-circle{
   border-radius: 50%;
+}
+
+.container-fluid{
+  padding-bottom: 15px;
 }
 
 .navbar{
@@ -42,7 +50,7 @@ hr{
   min-height: 55px;
   min-width: 10vw;
   max-width: 0px;
-  /*padding: 0px 15px 5px;*/
+  padding: 0px 15px 5px
 }
 
 .navbar-header .logo a{
@@ -86,7 +94,7 @@ hr{
 
 footer{
   width: 100%;
-  background: linear-gradient(#5e4485,#00004d);
+  background: black;
   padding: 3%;
   color: #fff;
 }

@@ -41,17 +41,45 @@
 
 /* End of Video */
 
-section {
-  padding-top: 50px;
-}
+
 
 .white-bg{
-
+  position: relative;
 }
 
+.white-bg:after{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: solid 50px #f5f5dc;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  z-index: 5;
+}
+
+
 .black-bg{
-  background: black;
+  background: linear-gradient(to bottom right, black, #141452);
   color: #fff;
+  position:relative;
+}
+
+.black-bg:after{
+  content:'';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -50px;
+  width: 0;
+  height: 0;
+  border-top: solid 50px black;
+  border-left: solid 50px transparent;
+  border-right: solid 50px transparent;
+  z-index: 5;
 }
 
 .black-bg a{
@@ -62,12 +90,50 @@ section {
   color: grey;
 }
 
-.btn-year{
+.btn-year1, .btn-year2, .btn-year3, .btn-year4, .btn-year5{
   width: 100%;
   background: black;
+  transition: all .3s ease-in-out;
 }
 
-button:hover {
+.btn-year1:hover {
     background-color: #5e4485;
     color: white;
+}
+
+.btn-year2:hover {
+    background-color: green;
+    color: white;
+}
+
+.btn-year3:hover {
+    background-color: blue;
+    color: white;
+}
+
+.btn-year4:hover {
+    background-color: orange;
+    color: white;
+}
+
+.btn-year5:hover {
+    background-color: red;
+    color: white;
+}
+
+.project-btn img{
+  transition: all .3s ease-in-out;
+  /*
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  */
+}
+
+.project-btn img:hover{
+  filter:invert(100%);
+  background: #5e4485;
+  border-radius: 50%;
+
 }
