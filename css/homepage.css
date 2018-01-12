@@ -17,6 +17,7 @@
 .header-overlay{
   height: 100vh;
   width: 100vw;
+  max-width:100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -52,18 +53,18 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -5vw;
   width: 0;
   height: 0;
-  border-top: solid 50px #f5f5dc;
-  border-left: solid 50px transparent;
-  border-right: solid 50px transparent;
+  border-top: solid 5vw #f2f2f2;
+  border-left: solid 5vw transparent;
+  border-right: solid 5vw transparent;
   z-index: 5;
 }
 
 
 .black-bg{
-  background: linear-gradient(to bottom right, black, #141452);
+  background: #1a1a1a;
   color: #fff;
   position:relative;
 }
@@ -73,13 +74,28 @@
   position: absolute;
   top: 100%;
   left: 50%;
-  margin-left: -50px;
+  margin-left: -5vw;
   width: 0;
   height: 0;
-  border-top: solid 50px black;
-  border-left: solid 50px transparent;
-  border-right: solid 50px transparent;
-  z-index: 5;
+  border-top: solid 5vw #1a1a1a;
+  border-left: solid 5vw transparent;
+  border-right: solid 5vw transparent;
+  z-index: 2;
+}
+
+@media (min-width: 900px) {
+  .black-bg:after{
+    margin-left: -50px;
+    border-top: solid 50px #1a1a1a;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+  }
+  .white-bg:after{
+    margin-left: -50px;
+    border-top: solid 50px #f2f2f2;
+    border-left: solid 50px transparent;
+    border-right: solid 50px transparent;
+  }
 }
 
 .black-bg a{
@@ -97,28 +113,28 @@
 }
 
 .btn-year1:hover {
-    background-color: #5e4485;
+    background-color: #523e75;
     color: white;
 }
 
 .btn-year2:hover {
-    background-color: green;
+    background-color: #7757a8;
     color: white;
 }
 
 .btn-year3:hover {
-    background-color: blue;
+    background-color: #a089c2;
     color: white;
 }
 
 .btn-year4:hover {
-    background-color: orange;
+    background-color: #c9bcdc;
     color: white;
 }
 
 .btn-year5:hover {
-    background-color: red;
-    color: white;
+    background-color: #e3deed;
+    color: black;
 }
 
 .project-btn img{

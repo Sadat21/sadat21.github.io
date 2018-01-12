@@ -1,5 +1,5 @@
 body{
-  background: #f5f5dc;
+  background: #f2f2f2;
   font-size: 18px;
   font-family: 'Quicksand', sans-serif;
 }
@@ -39,8 +39,14 @@ hr{
   color: #fff;
   background-color: #5e4485;
 }
-.navbar-inverse .navbar-nav li a {
-  color: #d5d5d5;
+.navbar-inverse .navbar-nav li a, .navbar-inverse .navbar-nav li a:visited {
+  color: #5e4485;
+  transition: all .3s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #fff;
+  background: #adadeb;
 }
 
 .navbar-brand{
@@ -92,11 +98,16 @@ hr{
   margin: 1% auto;
 }
 
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #8539dc;
+}
+
 footer{
   width: 100%;
-  background: black;
+  background-color: black;
   padding: 3%;
   color: #fff;
+  z-index: 9999;
 }
 
 .fa{
