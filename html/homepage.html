@@ -98,25 +98,25 @@
   <!-- End of Video background -->
 
   <!-- Start of About me Section -->
-  <div class="container-fluid white-bg">
-      <section id="about" class="container">
+  <div class="container-fluid white-bg slideanim">
+    <section id="about" class="container">
 
-        <div class="row">
-          <div class="col-md-6">
-            <h1>About Me</h1>
-            <br>
-            <h3>Hello, my name is Sadat Islam</h3>
-            <p> I like to paint with pixels, share my thoughts in 140
-              characters or less, pretend to be a photographer, keep
-              up with my friends, and laught at funny stuff. Why
-              don't you say hi.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img src="../img/me.jpg" class="img-responsive img-circle">
-          </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>About Me</h1>
+          <br>
+          <h3>Hello, my name is Sadat Islam</h3>
+          <p> I like to paint with pixels, share my thoughts in 140
+            characters or less, pretend to be a photographer, keep
+            up with my friends, and laught at funny stuff. Why
+            don't you say hi.
+          </p>
         </div>
-      </section>
+        <div class="col-md-6">
+          <img src="../img/me.jpg" class="img-responsive img-circle">
+        </div>
+      </div>
+    </section>
 
   </div>
   <!-- End of About me Section -->
@@ -127,7 +127,7 @@
       <h1 class="text-center">Résumé</h1>
       <hr>
 
-      <div class="resume-content">
+      <div class="resume-content slideanim">
         <h3 class="text-center">Education</h3>
         <br>
         <div class="row">
@@ -189,11 +189,16 @@
   <!-- End of Resume Section -->
 
   <!-- Start of Projects Section -->
+  <div class="container-fluid parallax2 white-bg" id="projects">
+    <div class="parallax-title text-center">
+      <h1>Projects</h1>
+    </div>
+  </div>
   <div class="container-fluid white-bg">
-    <section id="projects" class="container">
+    <section class="container">
       <h1 class="text-center">Top 3 Projects</h1>
       <br>
-      <div class="row text-center">
+      <div class="row text-center slideanim">
         <div class="col-sm-4 project-btn">
           <a href="projects.html#section1"><img src="../img/bootstrap.png" id="icon"></a>
           <h4>Personal Website</h4>
@@ -224,7 +229,7 @@
       <br>
 
 
-      <div class="table-responsive text-center">
+      <div class="table-responsive text-center slideanim">
         <button class="btn-year1" data-toggle="collapse" data-target="#year1" style="hover:#fff;"><h2>Year 1 (2015 - 2016)</h2></button>
         <table class="table">
           <tbody id="year1" class="collapse">
@@ -442,10 +447,14 @@
   <!-- Start of COursese Section -->
 
   <!-- Start of Gallery Section -->
-  <div class="container-fluid white-bg">
+  <div class="container-fluid parallax">
     <section id="gallery" class="container">
-      <h1 class="text-center">Gallery</h1>
-      <br>
+
+    </section>
+  </div>
+  <div class="container-fluid white-bg">
+    <section class="container">
+
     </section>
   </div>
   <!-- Start of Gallery Section -->
@@ -458,6 +467,38 @@
     </section>
   </div>
   <!-- End of Awards Section -->
+
+  <!-- Start of Contact Section -->
+  <div class="container-fluid white-bg">
+    <section id="contact" class="container">
+      <h1 class="text-center">Contact</h1>
+      <hr>
+      <div class="row">
+        <div class="col-md-4">
+          <p>I'd love some feedback!</p>
+          <p>Please leave me a comment!</p>
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+          <div class="row">
+            <div class="col-md-12 form-group">
+              <br>
+              <button class="btn pull-right" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- End of Contact Section -->
 
 
 

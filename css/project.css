@@ -28,3 +28,7 @@
 .sec-navbar .navbar-brand h2:hover{
   color: #fff;
 }
+
+.navbar-inverse .navbar-nav li a, .navbar-inverse .navbar-nav li a:visited {
+  color: #fff;
+}

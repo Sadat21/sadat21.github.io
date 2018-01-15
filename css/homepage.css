@@ -42,6 +42,44 @@
 
 /* End of Video */
 
+/* Start of Scrolling Image Background */
+.parallax {
+    /* The image used */
+    background-image: url("../img/img_parallax.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.parallax2 {
+    /* The image used */
+    background-image: url("../img/project.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-title h1{
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  z-index: 3;
+  font-size: 70px;
+  color: black;
+
+
+}
+/* End of Scrolling Image Background */
 
 
 .white-bg{
