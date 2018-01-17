@@ -24,9 +24,7 @@
   background: #5e4485;
   z-index: -1;
   opacity: 0.85;
-
 }
-
 
 .header-content h1{
   font-size: 50px;
@@ -55,9 +53,10 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .parallax2 {
     /* The image used */
-    background-image: url("../img/me.jpg");
+    background-image: url("../img/img_parallax2.jpg");
     /* Set a specific height */
     min-height: 500px;
 
@@ -68,17 +67,10 @@
     background-size: cover;
 }
 
-.parallax-title h1{
+.parallax2 h1{
   color: #fff;
-  position: absolute;
-  width: 100%;
-  bottom: 10px;
-  z-index: 3;
-  font-size: 70px;
-  color: black;
-
-
 }
+
 /* End of Scrolling Image Background */
 
 
@@ -189,5 +181,17 @@
   filter:invert(100%);
   background: #5e4485;
   border-radius: 50%;
+}
 
+
+
+@media (min-width: 734px) {
+  .carousel{
+    padding-bottom: 100px;;
+    background: black;
+  }
+}
+
+.resume-content .row:hover{
+  color: #a089c2;
 }

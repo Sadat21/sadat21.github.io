@@ -4,8 +4,8 @@ body{
   font-family: 'Quicksand', sans-serif;
 }
 
-a:visited{
-
+h1{
+  font-family: 'Julius Sans One', 'Quicksand', sans-serif;
 }
 
 
@@ -89,6 +89,10 @@ hr{
   padding: 12px 22px;
   background: #5e4485;
   border: 2px solid #fff;
+}
+
+.btn:hover{
+  color: grey;
 }
 
 .container{
