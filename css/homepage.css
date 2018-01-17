@@ -26,6 +26,10 @@
   opacity: 0.85;
 }
 
+.header-content{
+  text-align: center;
+}
+
 .header-content h1{
   font-size: 50px;
   padding-bottom: 3px;

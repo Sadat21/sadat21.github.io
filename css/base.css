@@ -53,21 +53,33 @@ hr{
 
 .navbar-brand{
   text-align: center;
-  float: left;
   color: #adadeb;
   min-height: 55px;
   min-width: 10vw;
-  max-width: 0px;
-  padding: 0px 15px 5px
+}
+
+@media (max-width:1070px) {
+  .navbar-brand{
+    min-width: 107px;
+  }
+}
+
+.navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px;
+    max-width: 2px;
 }
 
 .navbar-header .logo a{
   background: #fff;
+  text-align: center;
   font-size: 30px;
+  padding-top: 5px;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
+
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 
@@ -156,6 +168,13 @@ th {
     font-size: 1.7em;
   }
 }
+
+@media (max-width: 500px) {
+  .logo-name{
+    display: none;
+  }
+}
+
 
 .slideanim {visibility:hidden;}
 .slide {
