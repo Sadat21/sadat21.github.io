@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+
+  <!--Used to test. Used to refresh the page every 5 seconds-->
+  <!--<meta http-equiv="refresh" content="5" >-->
+
+
+  <title>Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/project.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+
+</head>
+
+<body>
+
+
+
+  <!-- Start of all projects navbar-->
+
+  <div class="sec-navbar" id="topBar">
+    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+
+    <nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="70">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand slide-section" href="#topBar"><h2>Projects</h2></a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse"  id="myNavbar2">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">2018 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#section1" class="slide-section">Personal Website</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">2017 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#section2" class="slide-section">Bangla Bazaar Food Court Website</a></li>
+                  <li><a href="#section3" class="slide-section">Airlines Registration System</a></li>
+                  <li><a href="#section4" class="slide-section">Calculator App for Android</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">2015 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#section5" class="slide-section">Kobra Wars</a></li>
+                </ul>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- End of all projects navbar -->
+
+  <!-- Start of Title -->
+  <div class="container">
+    <h1 class="text-center">Projects</h1>
+    <br>
+    <p>
+      The following are projects that I have been involved in.
+      The list is ordered with the most recent project at the top.
+      Most of the projects have been a part of school but this website is a personal endeavor.
+      A link to my GitHub is in the footer.
+    </p>
+
+  </div>
+  <!-- End of Title -->
+
+
+  <!-- Sections  -->
+  <div class="container">
+    <div id="section1">
+      <hr>
+      <h2>Personal Website (January 2018)</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>Summary:</b> A portfolio of my projects for employers to take a glance at.</p>
+          <p><b>Main things learned:</b> Bootstrap, CSS, javascript, web design</p>
+          <p><b>Group Size:</b> 1</p>
+          <p><b>Status:</b> Ongoing Process</p>
+          <br>
+          <div class="text-center">
+            <a href="https://github.com/Sadat21/sadat21.github.io" class="text-center btn" target="_blank">Source Code</a>
+            <br>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!--Start of Slider-->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/website/website1.png">
+              </div><!--End Active Image-->
+              <div class="item">
+                <img src="img/website/website2.png">
+              </div>
+            </div>
+
+            <!--Start of Slider Controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--End of Slider Controls-->
+
+          </div>
+          <!-- End of Slider-->
+        </div>
+      </div>
+      <!-- End of Row -->
+      <!--Start of Hidden Drop Down-->
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+          <h4><a href="#hidden" data-toggle="collapse">Learn more</a></h4>
+          <div id="hidden" class="collapse">
+            <br>
+            <p><b>Motivation</b></p>
+            <p>
+
+            </p>
+            <p><b>Lessons Learned</b></p>
+            <p>
+
+            </p>
+            <p><b>Future</b></p>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End of Hidden Drop Down-->
+    </div>
+
+    <div id="section2">
+      <hr>
+      <h2>Bangla Bazaar Food Court Website (November 2017)</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>Summary:</b> A web application for a local restuarant.
+          Manager has ability to populate menu, specials, as well as
+          receive orders.</p>
+          <p><b>Languages:</b> C#, HTML, SQL</p>
+          <p><b>New things learned:</b> ASP.Net, HTML</p>
+          <p><b>Group Size:</b> 2</p>
+          <p><b>Status:</b> Completed with bugs</p>
+          <br>
+          <div class="text-center">
+            <a href="https://github.com/Sadat21/BanglaBazarFoodCourt" class="text-center btn" target="_blank">Source Code</a>
+            <a href="pdf/BanglaBazarReport.pdf" class="text-center btn" target="_blank">Final Report</a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!--Start of Slider-->
+          <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel2" data-slide-to="1" ></li>
+              <li data-target="#myCarousel2" data-slide-to="2" ></li>
+              <li data-target="#myCarousel2" data-slide-to="3" ></li>
+              <li data-target="#myCarousel2" data-slide-to="4" ></li>
+              <li data-target="#myCarousel2" data-slide-to="5" ></li>
+              <li data-target="#myCarousel2" data-slide-to="6" ></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/banglabazar/bangla1.png">
+              </div><!--End Active Image-->
+              <div class="item">
+                <img src="img/banglabazar/bangla2.png">
+              </div>
+              <div class="item">
+                <img src="img/banglabazar/bangla3.png">
+              </div>
+              <div class="item">
+                <img src="img/banglabazar/bangla4.png">
+              </div>
+              <div class="item">
+                <img src="img/banglabazar/bangla5.png">
+              </div>
+              <div class="item">
+                <img src="img/banglabazar/bangla6.png">
+              </div>
+              <div class="item">
+                <img src="img/banglabazar/bangla7.png">
+              </div>
+            </div>
+            <!--Start of Slider Controls -->
+            <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--End of Slider Controls-->
+
+          </div>
+          <!-- End of Slider-->
+        </div>
+      </div>
+      <!-- End of Row -->
+      <!--Start of Hidden Drop Down-->
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+          <h4><a href="#hidden2" data-toggle="collapse">Care to learn more about this project?</a></h4>
+          <div id="hidden2" class="collapse">
+            <br>
+            <p><b>Motivation</b></p>
+            <p>
+              Aside from being our final project for CPSC 471, we wanted to help a local small restaurant by creating a website
+            </p>
+            <p><b>Lessons Learned</b></p>
+            <p>
+
+            </p>
+            <p><b>Future</b></p>
+            <p>
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End of Hidden Drop Down-->
+    </div>
+
+
+    <div id="section3">
+      <hr>
+      <h2>Airlines Registration System (April 2017)</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>Summary:</b> A client-server application where customers are able to
+          browse and book available flights.</p>
+          <p><b>Languages:</b> Java, SQL</p>
+          <p><b>New things learned:</b> Threads, client-server, database integration,
+          </p>
+          <p><b>Group Size:</b> 3</p>
+          <p><b>Status:</b> Finished</p>
+          <br>
+          <div class="text-center">
+            <a href="https://github.com/Sadat21/AirlinesRegistrationSystem" class="text-center btn" target="_blank">Source Code</a>
+            <br>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!--Start of Slider-->
+          <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel3" data-slide-to="1" ></li>
+              <li data-target="#myCarousel3" data-slide-to="2" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/airlines/airlines1.png">
+              </div><!--End Active Image-->
+              <div class="item">
+                <img src="img/airlines/airlines2.png">
+              </div>
+              <div class="item">
+                <img src="img/airlines/airlines3.png">
+              </div>
+            </div>
+
+            <!--Start of Slider Controls -->
+            <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--End of Slider Controls-->
+
+          </div>
+          <!-- End of Slider-->
+        </div>
+      </div>
+      <!-- End of Row -->
+      <!--Start of Hidden Drop Down-->
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+          <h4><a href="#hidden3" data-toggle="collapse">Learn More</a></h4>
+          <div id="hidden3" class="collapse">
+            <br>
+            <p><b>Motivation</b></p>
+            <p>
+              This was the final project for ENSF 409. This project was a way for us to implement
+              various elements that we learned over the term. These elements are listed in the
+              "New Things Learned" section above.
+            </p>
+            <p><b>Lessons Learned</b></p>
+            <p>
+              This was my first big group project. Among the three of us, the roles were divided into backend, front end, and controller classes.
+              We didn't have many issues completing our individual sections, but there were major issues when it came to connecting the parts
+              together. We didn't allocate as much time for this stage as we should have, and we ended up working about 8 hours straight the day
+              the project was due. We were able to get the project completed and scored 120/100 (had bonus features). Although we were successful
+              this time, on a bigger project we may not have been as lucky.
+            </p>
+            <p><b>Future</b></p>
+            <p>
+              This project was more of a learning experience then an actual product, hence there will not be any future plans for this project.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End of Hidden Drop Down-->
+    </div>
+
+
+    <div id="section4">
+      <hr>
+      <h2>Calculator App for Android (March 2017)</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>Summary:</b> A basic calculator app for android.</p>
+          <p><b>Languages:</b> Java, Xml</p>
+          <p><b>New things learned:</b> Android framework, app development</p>
+          <p><b>Group Size:</b> 2</p>
+          <p><b>Status:</b> Finished</p>
+          <br>
+          <div class="text-center">
+            <a href="https://github.com/Sadat21/Calculator" class="text-center btn" target="_blank">Source Code</a>
+            <br>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!--Start of Slider-->
+          <div id="myCarousel4" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel4" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel4" data-slide-to="1" ></li>
+              <li data-target="#myCarousel4" data-slide-to="2" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/calculator/calculator1.png">
+              </div><!--End Active Image-->
+              <div class="item">
+                <img src="img/calculator/calculator2.png">
+              </div>
+              <div class="item">
+                <img src="img/calculator/calculator3.png">
+              </div>
+            </div>
+
+            <!--Start of Slider Controls -->
+            <a class="left carousel-control" href="#myCarousel4" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel4" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--End of Slider Controls-->
+
+          </div>
+          <!-- End of Slider-->
+        </div>
+      </div>
+      <!-- End of Row -->
+      <!--Start of Hidden Drop Down-->
+      <div class="row">
+        <div class="col-sm-12">
+          <br>
+          <h4><a href="#hidden4" data-toggle="collapse">Learn More</a></h4>
+          <div id="hidden4" class="collapse">
+            <br>
+            <p><b>Motivation</b></p>
+            <p>
+              This was an assignment for ENSF 409. This was the first android app that
+              I have created. We learned how to use Android Studio, as well as get an
+              introduction to XML.
+            </p>
+            <p><b>Lessons Learned</b></p>
+            <p>This was one of the earlier projects that involved group work. Although the assignment
+              was simple, it showed that working in a group environment can hinder the development
+              process if everyone is not on the same page. This is why it is important to spend a good
+              chunk of time on planning out the whole project and assigning roles to members.
+            </p>
+            <p><b>Future</b></p>
+            <p>
+              I plan on creating a google developer account and publishing this app on the
+              Google Play Store as a learning experience.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--End of Hidden Drop Down-->
+    </div>
+
+    <div id="section5">
+      <hr>
+      <h2>Kobra Wars (December 2015)</h2>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <p><b>Summary:</b> A multiplayer game of dueling snakes. Objective
+          of the game is to block your oponment and force them to hit an
+          obstacle.</p>
+          <p><b>Languages:</b> Processing</p>
+          <p><b>New things learned:</b> Loops, arrays, graphical output</p>
+          <p><b>Group Size:</b> 1</p>
+          <p><b>Status:</b> Finished</p>
+          <br>
+          <div class="text-center">
+            <a href="https://github.com/Sadat21/Kobra_Wars" class="text-center btn" target="_blank">Source Code</a>
+            <a href="pdf/KobraReport.pdf" class="text-center btn" target="_blank">Final Report</a>
+            <br>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <!--Start of Slider-->
+          <div id="myCarousel5" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel5" data-slide-to="1" ></li>
+              <li data-target="#myCarousel5" data-slide-to="2" ></li>
+              <li data-target="#myCarousel5" data-slide-to="3" ></li>
+              <li data-target="#myCarousel5" data-slide-to="4" ></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="img/kobrawars/kobra1.png">
+              </div><!--End Active Image-->
+              <div class="item">
+                <img src="img/kobrawars/kobra2.png">
+              </div>
+              <div class="item">
+                <img src="img/kobrawars/kobra3.png">
+              </div>
+              <div class="item">
+                <img src="img/kobrawars/kobra4.png">
+              </div>
+              <div class="item">
+                <img src="img/kobrawars/kobra5.png">
+              </div>
+            </div>
+
+            <!--Start of Slider Controls -->
+            <a class="left carousel-control" href="#myCarousel5" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="right carousel-control" href="#myCarousel5" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+            <!--End of Slider Controls-->
+
+          </div>
+          <!-- End of Slider-->
+        </div>
+      </div>
+    </div>
+    <!-- End of Row -->
+    <!--Start of Hidden Drop Down-->
+    <div class="row">
+      <div class="col-sm-12">
+        <br>
+        <h4><a href="#hidden5" data-toggle="collapse">Learn More</a></h4>
+        <div id="hidden5" class="collapse">
+          <br>
+          <p><b>Motivation</b></p>
+          <p>
+            This was our final project for our first programming course.
+            We were allowed to create any game that incorporated all the topics that we covered in the term.
+            Kobra Wars is a spinoff of the game "Snake" but with a multiplayer mode.
+            Instead of trying to beat your high score, the objective is to force your oponent to commit an error.
+          </p>
+          <p><b>Lessons Learned</b></p>
+          <p>
+            Even a simple game like Snake has a lot of factors to take into account. I ended up writing a few hundred lines of
+            code by the end of this project. This made me appreciate the complexities that lie under the hood of all our
+            modern applications.
+          </p>
+          <p><b>Future</b></p>
+          <p>
+            I may try and port this game into a mobile version. One of my future goals is to get into app development, and this may be
+            my first edition to my app portfolio.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--End of Hidden Drop Down-->
+  </div>
+  <!-- End of Sections -->
+
+
+
+
+
+
+
+  <!--Start of Footer-->
+  <footer class="container-fluid text-center">
+    <div class="row">
+      <div class="col-sm-4">
+        <h3>Contact Me</h3>
+        <br>
+        <h4>sadat.islam@ucalgary.ca</h4>
+      </div>
+      <div class="col-sm-4">
+        <h3>Connect</h3>
+        <a href="https://www.linkedin.com/in/sadat-islam/" class="fa fa-linkedin" target="_blank"></a>
+        <a href="https://github.com/sadat21" class="fa fa-github" target="_blank"></a>
+      </div>
+      <div class="col-sm-4">
+        <img src="img/signiture.png">
+      </div>
+    </div>
+  </footer>
+  <!--End of Footer-->
+
+
+
+
+</body>
+</html>
