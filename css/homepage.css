@@ -200,6 +200,7 @@
   color: #a089c2;
 }
 
+/*
 .img1, .img2, .img3{
   transition: filter .3s ease-in-out;
   color: black;
@@ -208,3 +209,4 @@
 .img1:hover, .img2:hover, .img3:hover{
   filter:blur(10px);
 }
+*/

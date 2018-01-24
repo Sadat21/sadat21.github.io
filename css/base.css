@@ -18,6 +18,9 @@ hr{
 
 .img-circle{
   border-radius: 50%;
+  max-height: 400px;
+  padding: 2%;
+  align-items: center;
 }
 
 .container-fluid{
