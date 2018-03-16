@@ -78,6 +78,9 @@
           <li>
             <a class="slide-section" href="#gallery">Gallery</a>
           </li>
+          <li>
+            <a class="slide-section" href="#contact">Contact</a>
+          </li>
         </ul>
       </div>
 
@@ -508,30 +511,6 @@
         </a>
       </div>
 
-      <!--FaceBook Messnger -->
-      <div class="fb-customerchat" page_id="669877976469932"></div>
-
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId            : '198967430698269',
-            autoLogAppEvents : true,
-            xfbml            : true,
-            version          : 'v2.11'
-          });
-        };
-
-        (function(d, s, id){
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) {return;}
-          js = d.createElement(s); js.id = id;
-          js.src = "https://connect.facebook.net/en_US/sdk.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-      </script>
-
-
-
       <!-- Modal -->
       <!--
       <div id="myModal" class="modal fade" role="dialog">
@@ -558,6 +537,103 @@
 </section>
 </div>
 <!-- Start of Gallery Section -->
+
+
+
+<!--Start of FaceBook Messnger -->
+<div class="fb-customerchat" page_id="669877976469932"></div>
+
+<script>
+window.fbAsyncInit = function() {
+  FB.init({
+    appId            : '198967430698269',
+    autoLogAppEvents : true,
+    xfbml            : true,
+    version          : 'v2.11'
+  });
+};
+
+(function(d, s, id){
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+<!--Emd pf FaceBook Messnger -->
+
+
+
+
+<!-- Start pf Contact Form -->
+<div class="container-fluid black-bg">
+  <section id="contact" class="container text-center">
+    <h1 class="text-center">Contact</h1>
+    <hr>
+
+    <form action="https://formspree.io/sadat21@hotmail.ca" method="POST" class="needs-validation" novalidate>
+      <input type="hidden" name="_next" value="/HTML/contact.html"/>
+      <input type="hidden" name="_subject" value="Message from brianpho.com"/>
+      <input type="text" name="_gotcha" style="display:none"/>
+      <div class="form-group">
+        <label for="InputName">Your Name</label>
+        <input type="text" class="form-control" id="validationCustom01" name="Sender Name" placeholder="Enter Name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please enter a name.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="InputEmail">Your Email</label>
+        <input type="email" class="form-control" id="validationCustom02" name="_replyto" placeholder="Enter Email" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please enter an email.
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="InputMessage">Message</label>
+        <textarea name="Message" class="form-control" id="validationCustom03" rows="5" placeholder="Hey is for horses." required></textarea>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+        <div class="invalid-feedback">
+          Please enter a message.
+        </div>
+      </div>
+      <button type="submit" class="btn btn-outline-primary" id="btn">Submit</button>
+    </form>
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+
+  </section>
+</div>
+
+<!--End of Contact Form -->
 
 
 
