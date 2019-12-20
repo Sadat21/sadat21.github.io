@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <title>Sadat Islam</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Julius+Sans+One"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3"></script>
+    
+  </head>
+
+  <body>
+    <!-- Start of Video background -->
+    <div
+      class="container-fluid"
+      style="color: white; display: flex; height: 100vh; align-items: center;"
+    >
+      <div class="fullscreen-video-wrap">
+        <video
+          src="video/TL.mp4"
+          autoplay="true"
+          loop="true"
+          poster="img/mezban.png"
+        ></video>
+      </div>
+      <div class="header-content container">
+        <br>
+        <p></p>
+        <p></p>
+        <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+        <button
+          style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+          id="checkout-button-sku_GOcCQMvDf0ESv2"
+          role="link"
+        >
+          Purchase Ticket
+        </button>
+        <div id="error-message"></div>
+        <script>
+            (function() {
+              var stripe = Stripe("pk_test_OG5nYVQdNRKd3JVUJY7t2Uge00kwEaK88g");
+    
+              var checkoutButton = document.getElementById(
+                "checkout-button-sku_GOcCQMvDf0ESv2"
+              );
+              checkoutButton.addEventListener("click", function() {
+                // When the customer clicks on the button, redirect
+                // them to Checkout.
+                stripe
+                  .redirectToCheckout({
+                    items: [{ sku: "sku_GOcCQMvDf0ESv2", quantity: 1 }],
+    
+                    // Do not rely on the redirect to the successUrl for fulfilling
+                    // purchases, customers may not always reach the success_url after
+                    // a successful payment.
+                    // Instead use one of the strategies described in
+                    // https://stripe.com/docs/payments/checkout/fulfillment
+                    successUrl: "https://sadat21.github.io/success",
+                    cancelUrl: "https://sadat21.github.io/canceled"
+                  })
+                  .then(function(result) {
+                    if (result.error) {
+                      // If `redirectToCheckout` fails due to a browser or network
+                      // error, display the localized error message to your customer.
+                      var displayError = document.getElementById("error-message");
+                      displayError.textContent = result.error.message;
+                    }
+                  });
+              });
+            })();
+          </script>
+      </div>
+    </div>
+    <!-- End of Video background -->
+
+    <!-- Start of Stripe Section -->
+    <div class="container-fluid white-bg">
+      <section id="about" class="container">
+        
+
+        
+
+        
+      </section>
+    </div>
+    <!-- End of Stripe Section -->
+  </body>
+</html>
